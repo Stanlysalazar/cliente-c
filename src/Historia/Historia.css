@@ -1,0 +1,39 @@
+
+.custom-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px; 
+  padding: 20px;
+  margin-bottom: 20px; 
+  margin-right: 8%;
+}
+
+.custom-card img {
+  border-radius: 10px; 
+}
+.container {
+  text-align: center;
+}
+
+#colorChangingHeader {
+    color: red;
+    animation: cambiarColor 1s ease infinite; /* 1s de duración, facilidad de transición y repetición infinita */
+   
+  }
+  
+  @keyframes cambiarColor {
+    0% {
+      color: red;
+    }
+    50% {
+      color: blue;
+    }
+    100% {
+      color: red;
+    }
+  }
+  
+  #colorChangingHeader:hover {
+    animation: none; /* Detener la animación cuando el ratón está sobre el elemento */
+    color: blue; /* Cambiar directamente a azul al pasar el ratón */
+  }
+  
